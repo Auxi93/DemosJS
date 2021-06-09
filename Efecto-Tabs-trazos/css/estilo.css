@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  line-height: 29px;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: black;
+  line-height: 2em;
+}
+
+p a {
+  display: inline;
+}
+
+img {
+  /* width: 100%; */
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  color: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.centrado {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: auto;
+}
+
+.tab {
+  width: 50%;
+  background: #ffffff;
+  border: 1px solid #cccccc;
+  margin: 3em;
+  padding: 1em;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.tab.oculto {
+  height: 84px;
+  overflow: hidden;
+}
+
+.tab:hover {
+  background: lightgrey;
+}
+.tab:hover h3 {
+  color: #e6512f;
+}
+
+.tab__up {
+  margin: 1em;
+  display: flex;
+  flex-flow: row, nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: auto;
+}
+
+.tab__icono {
+  color: #e6512f;
+}
+
+.tab__down {
+  height: 460px;
+}
+
+.tab__img {
+  margin: 34px 0 10px;
+}
+
+.tab__p {
+  color: #666666;
+}

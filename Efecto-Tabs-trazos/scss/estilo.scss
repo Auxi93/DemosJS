@@ -1,0 +1,44 @@
+@import "reset", "mixins", "keyframes";
+body {
+    @include flexible (row, nowrap, center, flex-start, auto);
+}
+
+.tab{
+    width: 50%;
+    background: #ffffff;
+    border: 1px solid hsl(0, 0%, 80%);
+    margin: 3em;
+    padding: 1em;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+.tab.oculto{
+    height: 84px;
+    overflow: hidden;
+}
+.tab:hover{
+    background: lightgrey;
+    h3{
+        color: #e6512f;
+    }
+}
+
+.tab__up{
+    margin: 1em;
+    @include flexible (row, nowrap, center, center, auto)
+}
+.tab__icono{
+    color: #e6512f;
+}
+
+.tab__down{
+    height: 460px;
+    
+}
+.tab__img{
+    margin: 34px 0 10px;
+}
+.tab__p{
+    color: #666666;
+}
