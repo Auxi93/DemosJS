@@ -1,0 +1,110 @@
+/*
+    Estilos generales para que las etiquetas no contengan propiedades
+    que nos estorben y en todos los navegadores se vean correctamente
+*/
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+a {
+  display: flex;
+  text-decoration: none;
+}
+
+video {
+  display: flex;
+  object-fit: cover;
+  object-position: center center;
+}
+
+audio {
+  display: flex;
+}
+
+p a {
+  display: inline;
+}
+
+li {
+  list-style-type: none;
+}
+
+table, tr, td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: normal normal normal 100%/140% Fakt Pro Medium, "Roboto", sans-serif;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  color: #181818;
+  background: #e7e7e7;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  -webkit-hyphens: auto;
+          hyphens: auto;
+}
+
+form input, form textarea, form select {
+  font: normal normal normal 100%/140% Fakt Pro Medium, "Roboto", sans-serif;
+  -webkit-hyphens: auto;
+          hyphens: auto;
+  background-color: transparent;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: block;
+}
+
+body {
+  min-height: 4700vh;
+  background-color: black;
+  padding: 0 0 10em;
+}
+
+video {
+  position: fixed;
+  top: 10vh;
+  left: 20%;
+  height: 80vh;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.info {
+  width: 40%;
+  padding: 1.3em;
+  position: fixed;
+  left: 22%;
+  bottom: 10%;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.info h2 {
+  margin-bottom: 1em;
+}
